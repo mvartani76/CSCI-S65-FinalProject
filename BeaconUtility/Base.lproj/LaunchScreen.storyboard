@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +21,55 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZa-Uh-b9l">
+                                <rect key="frame" x="77.5" y="101.5" width="220.5" height="67"/>
+                                <string key="text">Bluetooth Beacon
+Utility App</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGw-p9-hup">
+                                <rect key="frame" x="131" y="483.5" width="113" height="61"/>
+                                <string key="text">Mike Vartanian
+CSCI S-65
+Summer 2017</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="D2GO_logo" translatesAutoresizingMaskIntoConstraints="NO" id="dds-tN-YZ2">
+                                <rect key="frame" x="37.5" y="213.5" width="300" height="240"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digital2Go Logo used with permission from Digital2Go Media Networks, Inc." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fh5-OX-8VH">
+                                <rect key="frame" x="16" y="603" width="343" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GGw-p9-hup" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8QN-Tp-V0g"/>
+                            <constraint firstItem="dds-tN-YZ2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="CkD-oX-h7a"/>
+                            <constraint firstItem="dds-tN-YZ2" firstAttribute="top" secondItem="iZa-Uh-b9l" secondAttribute="bottom" constant="45" id="Eju-XI-10J"/>
+                            <constraint firstItem="iZa-Uh-b9l" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="P5v-gz-Y58"/>
+                            <constraint firstItem="dds-tN-YZ2" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="RXe-wf-WzO"/>
+                            <constraint firstItem="GGw-p9-hup" firstAttribute="top" secondItem="dds-tN-YZ2" secondAttribute="bottom" constant="30" id="Tb7-VQ-m1w"/>
+                            <constraint firstItem="fh5-OX-8VH" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="VvR-DK-CG3"/>
+                            <constraint firstItem="fh5-OX-8VH" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Yqg-cY-VQr"/>
+                            <constraint firstItem="fh5-OX-8VH" firstAttribute="top" secondItem="GGw-p9-hup" secondAttribute="bottom" constant="58.5" id="fzO-VC-WSX"/>
+                            <constraint firstItem="fh5-OX-8VH" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="yOy-ie-iuO"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="136.80000000000001" y="219.94002998500753"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="D2GO_logo" width="300" height="240"/>
+    </resources>
 </document>

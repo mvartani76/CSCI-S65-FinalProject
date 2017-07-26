@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BeaconList View Controller-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" userLabel="BeaconList View Controller" customClass="BeaconListViewController" customModule="BeaconUtility" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x50-yc-MRh" userLabel="BeaconListTableView">
+                                <rect key="frame" x="0.0" y="72" width="375" height="575"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ewS-eu-Ecz" userLabel="BeaconListTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ewS-eu-Ecz" id="i68-sB-bVK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vCA-2p-wFQ">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="vsH-CN-XbX">
+                            <connections>
+                                <segue destination="agC-9c-u6w" kind="show" id="8tA-TS-THG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2316" y="-805"/>
+        </scene>
+        <!--BeaconRange View Controller-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" userLabel="BeaconRange View Controller" customClass="BeaconRangeViewController" customModule="BeaconUtility" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iBT-JI-Sp2" userLabel="BeaconRangeTableView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="476"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="FS6-Ub-qpC" userLabel="BeaconRangeTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FS6-Ub-qpC" id="jf7-yR-wVm">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HbG-on-yuq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2348" y="-69.715142428785612"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="V6h-Vj-vwA" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="G9u-Qj-xky" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="Y6R-wE-yS3" kind="relationship" relationship="viewControllers" id="6At-tV-Pjn"/>
+                        <segue destination="0ss-BC-Kyb" kind="relationship" relationship="viewControllers" id="BfF-WX-3mC"/>
+                        <segue destination="clo-wR-c8o" kind="relationship" relationship="viewControllers" id="bmW-FT-Vcd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--BeaconListNav-->
+        <scene sceneID="Wep-uU-ReN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V6h-Vj-vwA" userLabel="BeaconListNav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Beacons" image="first" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zwq-6c-Tzz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="gOw-Xz-3mW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YmN-Fo-QKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1218" y="-804"/>
+        </scene>
+        <!--BeaconRangeNav-->
+        <scene sceneID="DaC-Pd-kO3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G9u-Qj-xky" userLabel="BeaconRangeNav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Range" image="second" id="cPa-gy-q4n" userLabel="Range"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yLM-XQ-kMp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="qUy-ae-8DJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gRI-hF-y0S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="-68"/>
+        </scene>
+        <!--BeaconMonitor View Controller-->
+        <scene sceneID="Mum-B6-K66">
+            <objects>
+                <viewController id="4ws-5W-HYk" userLabel="BeaconMonitor View Controller" customClass="BeaconMonitorViewController" customModule="BeaconUtility" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mSL-A6-f7O"/>
+                        <viewControllerLayoutGuide type="bottom" id="kLp-bf-EmT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pK1-gv-EvJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3bx-Lb-lYo" userLabel="BeaconMonitorTableView">
+                                <rect key="frame" x="0.0" y="269" width="375" height="288"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xf5-uD-qht" userLabel="BeaconMonitorTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xf5-uD-qht" id="1dD-qv-t8Z">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7JJ-2n-kIE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RNW-Uy-wQw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2348" y="656.22188905547227"/>
+        </scene>
+        <!--BeaconCampaign View Controller-->
+        <scene sceneID="5M8-ng-UNY">
+            <objects>
+                <viewController id="u9N-RP-mbV" userLabel="BeaconCampaign View Controller" customClass="BeaconCampaignViewController" customModule="BeaconUtility" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MlJ-Ce-dGi"/>
+                        <viewControllerLayoutGuide type="bottom" id="xS3-yq-OSu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4M5-eF-H7x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FCk-ku-Q0o" userLabel="BeaconCampaignTableView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="507"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="lfB-JF-Y3u" userLabel="BeaconCampaignTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lfB-JF-Y3u" id="Bg8-xI-7Pf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SaZ-ag-V3S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Tu-AO-HfE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2348" y="1374.9625187406298"/>
+        </scene>
+        <!--BeaconSimulator View Controller-->
+        <scene sceneID="d9l-gK-78d">
+            <objects>
+                <viewController id="ziq-wq-zsy" userLabel="BeaconSimulator View Controller" customClass="BeaconSimulationViewController" customModule="BeaconUtility" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Vf-O0-BpZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="FWl-GX-a5d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tIf-X0-4iu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show Custom UIImagive here based on beacon campaigns" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHC-PK-s5Q">
+                                <rect key="frame" x="16" y="133" width="359" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OFl-jM-sdL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FYr-0S-hI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2348" y="2156.6716641679163"/>
+        </scene>
+        <!--BeaconMonitorNav-->
+        <scene sceneID="oj4-6c-ypG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y6R-wE-yS3" userLabel="BeaconMonitorNav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Monitor" id="T8g-oY-zas" userLabel="Monitor"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c2B-mS-EAB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4ws-5W-HYk" kind="relationship" relationship="rootViewController" id="v16-y9-6Aq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rvn-6K-Ki7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="658"/>
+        </scene>
+        <!--BeaconCampaignNav-->
+        <scene sceneID="1Kn-xL-u7H">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0ss-BC-Kyb" userLabel="BeaconCampaignNav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Campaign" id="8yK-Nu-ktT" userLabel="Campaign"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hrb-cC-kvt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="u9N-RP-mbV" kind="relationship" relationship="rootViewController" id="NUA-52-rJJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbp-H6-xsF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="1375"/>
+        </scene>
+        <!--BeaconSimulationNav-->
+        <scene sceneID="t9F-FX-Mv1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="clo-wR-c8o" userLabel="BeaconSimulationNav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Simulation" id="X4r-3G-3sn" userLabel="Simulation"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IT2-o2-oC3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ziq-wq-zsy" kind="relationship" relationship="rootViewController" id="HfI-V0-boL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qd3-C7-DOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="2158"/>
+        </scene>
+        <!--BeaconInfo View Controller-->
+        <scene sceneID="lnL-Jg-chn">
+            <objects>
+                <viewController storyboardIdentifier="NewIBeaconViewController" automaticallyAdjustsScrollViewInsets="NO" id="agC-9c-u6w" userLabel="BeaconInfo View Controller" customClass="NewIBeaconViewController" customModule="BeaconScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H9o-yb-Ka6"/>
+                        <viewControllerLayoutGuide type="bottom" id="gmp-BY-cVp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wBC-kR-zvo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UUID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygH-Zt-4mQ" userLabel="BeaconUUID">
+                                <rect key="frame" x="16" y="55" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Major" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnf-KE-AC4" userLabel="BeaconMajor">
+                                <rect key="frame" x="16" y="129" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytN-Fk-Y5x" userLabel="BeaconMinor">
+                                <rect key="frame" x="16" y="211" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z5s-K8-gGA" userLabel="BeaconUUIDTextField">
+                                <rect key="frame" x="16" y="77" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cUl-RU-w8D" userLabel="BeaconMajorTextField">
+                                <rect key="frame" x="16" y="158" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uHw-7H-Kn3" userLabel="BeaconMinorTextField">
+                                <rect key="frame" x="16" y="240" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="cUl-RU-w8D" secondAttribute="trailing" id="3Mj-MY-1Nc"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="uHw-7H-Kn3" secondAttribute="leading" id="BIc-nV-WcZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uHw-7H-Kn3" secondAttribute="trailing" id="E09-iZ-JWz"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ygH-Zt-4mQ" secondAttribute="leading" id="ENB-SR-nul"/>
+                            <constraint firstItem="Wnf-KE-AC4" firstAttribute="top" secondItem="z5s-K8-gGA" secondAttribute="bottom" constant="22" id="KtI-OZ-czF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z5s-K8-gGA" secondAttribute="trailing" id="Q1w-N0-ahE"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ytN-Fk-Y5x" secondAttribute="leading" id="U2h-Z3-D5P"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="cUl-RU-w8D" secondAttribute="leading" id="WA1-vY-WBh"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Wnf-KE-AC4" secondAttribute="leading" id="XAm-ab-KVS"/>
+                            <constraint firstItem="ygH-Zt-4mQ" firstAttribute="top" secondItem="H9o-yb-Ka6" secondAttribute="bottom" constant="35" id="Z6F-fT-PCu"/>
+                            <constraint firstItem="uHw-7H-Kn3" firstAttribute="top" secondItem="ytN-Fk-Y5x" secondAttribute="bottom" constant="8" id="eiJ-Xz-hXL"/>
+                            <constraint firstItem="ytN-Fk-Y5x" firstAttribute="top" secondItem="cUl-RU-w8D" secondAttribute="bottom" constant="23" id="hi6-Vr-x3i"/>
+                            <constraint firstItem="cUl-RU-w8D" firstAttribute="top" secondItem="Wnf-KE-AC4" secondAttribute="bottom" constant="8" id="i97-oM-Gb1"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="z5s-K8-gGA" secondAttribute="leading" id="jqn-hQ-Lz3"/>
+                            <constraint firstItem="z5s-K8-gGA" firstAttribute="top" secondItem="ygH-Zt-4mQ" secondAttribute="bottom" constant="1" id="wBj-jj-YAU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="New iBeacon" id="1Ny-ex-VLj" userLabel="New Beacon">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="Rb6-a7-Fvo">
+                            <connections>
+                                <action selector="saveAction:" destination="agC-9c-u6w" id="WZj-SF-NMr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="majorTextField" destination="cUl-RU-w8D" id="0Qq-L0-I4e"/>
+                        <outlet property="minorTextField" destination="uHw-7H-Kn3" id="30g-bC-oUw"/>
+                        <outlet property="uuidTextField" destination="z5s-K8-gGA" id="9QW-NM-PSL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMe-yT-eE1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3367" y="-805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
